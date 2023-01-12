@@ -1,0 +1,187 @@
+/*generalstyle*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sorts Mill Goudy", serif;
+  background-image: url("weddingimg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 1.5rem;
+  background-color: honeydew;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  grid-template-columns: 100%;
+}
+
+/*smallscreenstyle*/
+
+@media screen and (min-width: 481px) {
+  background-image: url("weddingimg.jpg");
+}
+.appcontainer {
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto;
+  background-color: #e7e7e0;
+  border-style: ridge;
+  border-color: black;
+  text-align: center;
+  font: size 12px;
+  color: black;
+  box-shadow: 10em;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.apptitle {
+  text-shadow: black 50px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  color: #a6206a;
+}
+
+span {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Sorts Mill Goudy", serif;
+}
+
+#receptionListContainer,
+#breakfastListContainer,
+#ceremonyListContainer,
+#supplierListContainer {
+  font-size: 12px;
+  font-style: oblique;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+#addsupplier,
+#addceremony,
+#addbreakfast,
+#addreception {
+  font-weight: bold;
+  font-size: 10px;
+  text-size-adjust: 50px;
+  color: purple;
+}
+
+h2 {
+  font-size: 15px;
+  color: black;
+}
+
+h4 {
+  font-size: 12px;
+}
+
+.supplierlist,
+.ceremonylist,
+.breakfastlist,
+.receptionlist {
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+input {
+  width: 90px;
+  font-size: 12px;
+  box-sizing: border-box;
+  border: #a6206a;
+}
+input[type="button"] {
+  width: 90px;
+  border-radius: 6em;
+  font-size: small;
+}
+
+@media screen and (min-width: 992px) {
+  .appcontainer {
+    display: -ms-flexbox;
+    flex-direction: column;
+    width: 1050px;
+    height: 2000px;
+    margin: 25px auto;
+    background-color: #f4f1e6;
+    border-style: ridge;
+    border-color: black;
+    text-align: center;
+    font: size 20px;
+    color: black;
+    box-shadow: 10em;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .apptitle {
+    text-shadow: black 50px;
+    font-size: 70px;
+    color: #a6206a;
+  }
+
+  span {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Sorts Mill Goudy", serif;
+  }
+
+  #receptionListContainer,
+  #breakfastListContainer,
+  #ceremonyListContainer,
+  #supplierListContainer {
+    font-size: 30px;
+    font-style: oblique;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+  }
+
+  #addsupplier,
+  #addceremony,
+  #addbreakfast,
+  #addreception {
+    font-weight: bold;
+    font-size: 35px;
+    text-size-adjust: 50px;
+    color: purple;
+  }
+
+  h2 {
+    font-size: 32px;
+    color: black;
+  }
+
+  h4 {
+    font-size: 25px;
+  }
+
+  .supplierlist,
+  .ceremonylist,
+  .breakfastlist,
+  .receptionlist {
+    font-size: 30px;
+
+    text-decoration: underline;
+  }
+
+  input {
+    width: 300px;
+    font-size: 35px;
+    box-sizing: border-box;
+    border: #a6206a;
+  }
+  input[type="button"] {
+    width: 100px;
+    border-radius: 10em;
+    font-size: small;
+  }
+}

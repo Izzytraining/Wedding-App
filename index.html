@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Sorts+Mill+Goudy&display=swap"
+      rel="stylesheet"
+    />
+    <title class="title">Virtual Wedding Buddy</title>
+  </head>
+  <body>
+    <main>
+      <div class="appcontainer">
+        <h1 class="apptitle">Virtual Wedding Buddy</h1>
+        <br />
+        <h2 class="intro">
+          Weddings can be stressful but planning ahead makes it easier.
+        </h2>
+        <h4>
+          To help you, create a list of what you need by adding items. (This
+          might include photographers, wedding cake, dress etc.)
+        </h4>
+        <form>
+          <br /><br />
+          <h3 class="supplierlist">Wedding Suppliers</h3>
+          <br />
+          <input
+            autofocus
+            type="text"
+            placeholder="E.g. Photographer"
+            id="supplier_input"
+          />
+          <input type="button" value="add" id="addsupplier" /><br />
+          <br /><br />
+          <h3 class="ceremonylist">Wedding Ceremony</h3>
+          <br />
+          <input
+            autofocus
+            type="text"
+            aria-label="Enter an item"
+            placeholder="E.g. vows"
+            id="ceremony_input"
+          />
+          <input type="button" value="add" id="addceremony" /><br />
+          <br /><br />
+          <h3 class="breakfastlist">Wedding Breakfast</h3>
+          <br />
+          <input
+            autofocus
+            type="text"
+            aria-label="Enter an item"
+            placeholder="E.g. Speeches"
+            id="breakfast_input"
+          />
+          <input type="button" value="add" id="addbreakfast" /><br />
+          <br /><br />
+          <h3 class="receptionlist">Wedding Reception</h3>
+          <br />
+          <input
+            autofocus
+            type="inputfield"
+            aria-label="Enter an item"
+            placeholder="E.g. games"
+            id="reception_input"
+          />
+          <input type="button" value="add" id="addreception" />
+          <br />
+          <br />
+          <br />
+          <!--listsection-->
+          <div class="supplierList" id="supplierListContainer">
+            <p id="p1"><span>Supplier List</span></p>
+          </div>
+          <br /><br />
+          <div class="ceremonyList" id="ceremonyListContainer">
+            <p id="p2"><span> Ceremony List</span></p>
+          </div>
+          <br /><br />
+          <div class="breakfastList" id="breakfastListContainer">
+            <p id="p3"><span>Wedding Breakfast List</span></p>
+          </div>
+          <br /><br />
+          <div class="receptionList" id="receptionListContainer">
+            <p id="p4"><span>Reception List</span></p>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
